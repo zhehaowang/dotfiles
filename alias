@@ -3,7 +3,6 @@ parse_git_branch() {
 }
 
 export PS1="\u@\h \[\033[32m\]\w - \$(parse_git_branch)\[\033[00m\] $ "
-alias edit='open -a /Applications/TextWrangler.app'
 alias vi="/usr/local/bin/vim"
 alias gs="git status"
 alias hg="history | grep "

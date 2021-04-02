@@ -1,15 +1,20 @@
 dotfiles for setting up new env on mac / linux
 
-
 ### mac
 
-* tmux 2.9
-* iTerm2 3.2.6
+* iTerm2
+  * [Natural text editing (Option + Arrow forward / backward one word)](https://apple.stackexchange.com/questions/154292/iterm-going-one-word-backwards-and-forwards)
+* zshrc
+* oh my zsh
+  * [syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+  * [auto suggestion](https://github.com/zsh-users/zsh-autosuggestions)
+  * [z.sh](https://github.com/rupa/z)
+  * plugins
+* tmux
 
 * Effects
   * CapsLock as tmux prefix
   * Ctrl + A / Ctrl + E front / back of cmdline
-  * Option + Arrow forward / backward one word
 
 ### Shadowsocks server performance
 
@@ -18,3 +23,4 @@ dotfiles for setting up new env on mac / linux
 
 ### v4v6 tunnel on Verizon FiOS
 
+* tunnelbroker

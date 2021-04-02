@@ -18,7 +18,7 @@ Static IP 192.168.1.221.
 ### website
 
 * zhehao.me aliased to https://zhehaopi.ddns.net
-* huge http site served on 8081 (not forwarded as-is, open for debugging purposes when haproxy doesn't work out)
+* hugo http site served on 8081 (not forwarded as-is, open for debugging purposes when haproxy doesn't work out)
 * haproxy serving cert zhehaopi.ddns.net on 443 (forwarded as-is)
 * `nohup hugo server -D --bind=0.0.0.0 --port=8081 --baseUrl=https://zhehaopi.ddns.net --appendPort=false &`
   * where `baseUrl` is how css resources are located: setting it differently would cause cross-site complaints
@@ -38,3 +38,10 @@ Static IP 192.168.1.221.
 * postfix set up to use test gmail account with App password following [this](https://medium.com/swlh/setting-up-gmail-and-other-email-on-a-raspberry-pi-6f7e3ad3d0e).
 * email to `pi` is forwarded.
 * `sendmail [phone-number]@msg.fi.google.com` to send to phone
+
+### nfs
+
+* `cat /etc/exports`, `sudo exportfs`
+* `sudo systemctl status nfs-server`
+* nobody user mapping as in https://www.raspberrypi.org/documentation/configuration/nfs.md
+* `sudo mount -t nfs -o proto=tcp,port=2049 192.168.1.221:/export/users /Users/zhehaowang/mnt`
