@@ -1,0 +1,18 @@
+parse_git_branch() {
+        git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+export PS1="\u@\h \[\033[32m\]\w - \$(parse_git_branch)\[\033[00m\] $ "
+alias edit='open -a /Applications/TextWrangler.app'
+alias vi="/usr/local/bin/vim"
+alias gs="git status"
+alias hg="history | grep "
+alias gp="git pull"
+alias gc="git commit"
+alias gd="git diff"
+alias ss="ssh -i ~/Downloads/awstokyo.pem zhehao@18.182.90.253"
+alias sn="jupyter notebook"
+
+alias ss1="ssh -i /Users/zhehaowang/Downloads/seoulaws.txt ec2-user@54.180.188.36"
+alias sp="ssh pi@192.168.1.221"
+alias spe="ssh -p 22022 pi@zhehaopi.ddns.net"

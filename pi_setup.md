@@ -32,3 +32,9 @@ Static IP 192.168.1.221.
 ### ssh reverse tunnel
 
 * Dest port 22022 is forwarded to 22
+
+### email
+
+* postfix set up to use test gmail account with App password following [this](https://medium.com/swlh/setting-up-gmail-and-other-email-on-a-raspberry-pi-6f7e3ad3d0e).
+* email to `pi` is forwarded.
+* `sendmail [phone-number]@msg.fi.google.com` to send to phone
