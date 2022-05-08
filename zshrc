@@ -87,26 +87,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# user aliases
-alias vi="/usr/local/bin/vim"
-alias gs="git status"
-alias hg="history | grep "
-alias gp="git pull"
-alias gc="git commit"
-alias gd="git diff"
-
-alias myip="curl http://ipecho.net/plain; echo"
-alias usage="du -h -d1"
-alias port="lsof -i "
-
-alias sn="jupyter notebook"
-alias update="source ~/.zshrc"
-
-alias ss="ssh -i ~/Downloads/awstokyo.pem zhehao@18.182.90.253"
-alias ss1="ssh -i /Users/zhehaowang/Downloads/seoulaws.txt ec2-user@54.180.188.36"
-alias sp="ssh pi@192.168.1.221"
-alias spe="ssh -p 22022 pi@zhehaopi.ddns.net"
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
